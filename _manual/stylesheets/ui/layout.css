@@ -1,0 +1,109 @@
+:root {
+    font-size: 0.9rem;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: auto;
+    width: 100%;
+    z-index: -3;
+    background-color: yellow;
+}
+
+div.wrapper {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    background-color: coral;
+}
+
+
+/* BACKGROUND */
+div.background {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    /* min-height: calc(100vh - 4rem - 1.2rem - 3em);
+    height of viewport, minus height of top bar, minus padding */
+    width: 40rem;
+    overflow:hidden;
+    background-color: rgb(17, 255, 0);
+}
+
+/* FOREGROUND */
+div.foreground {
+    display: flex;
+    z-index: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: auto;
+    margin-top: 0.8rem;
+    margin-bottom: 7rem;
+    background-color: cadetblue;
+}
+
+/* MOD TITLE BAR */
+div.titlebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background-color: cornflowerblue;
+}
+
+/* ARTICLE CONTAINER */
+div.articleContainer {
+    position: relative;
+    z-index: 1;
+    margin: 1rem;
+    min-height: 40rem;
+    height: auto;
+    width: calc(100% - 2*1rem);
+    /* width of parent - padding */
+}
+
+/* NAV BAR */
+div.navBar {
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    padding: 1.3rem;
+    width: calc(100% - 2*1.3rem);
+    justify-content: end;
+    /* full width of parent - padding */
+}
+
+div.navBar:last-child {
+    margin-right: 1rem;
+}
+
+a.pageButton {
+    display: flex;
+    height: 2.1rem;
+    min-width: min-content;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* COPYRIGHT */
+p.copyrightNotice {
+    margin-right:1rem;
+    align-self: end;
+}

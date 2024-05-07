@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <meta http-equiv="refresh" content="0; url=/documents/installation.html" />
+</head>
+
+<style>
+    :root {
+        font-size: 1em;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(180deg, #ffea48 0%, #eb2058 100%);
+    }
+
+    div.flexbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    div.noticeBox {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 2em;
+        position: relative;
+        height: auto;
+        width: 50em;
+    }
+
+    div.notice {
+        margin: 1em;
+    }
+
+    h1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    p {
+        font-size: 1.3em;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    p.sorry {
+        text-align: end;
+    }
+</style>
+
+<body>
+    <div class="flexbox">
+        <div class="noticeBox">
+            <div class="notice">
+                <h1>Dear Firefox user,</h1>
+                <p>Due to security&trade;, referencing local files is deliberately disabled for Firefox and
+                    Firefox-based browsers.</p>
+                <p>What this means, is that stuff like custom fonts or pictures can't be displayed by simply opening a
+                    html file.</p>
+                <p>As a LibreWolf user myself, there is little I can do about this, except for hosting the manual
+                    online, which is something I cannot do, as of writing this, due to the non-monetary nature of my
+                    work (I also don't want this to be hosted on some random website).</p>
+                <p class="sorry">Sorry for the inconvenience, <br>HatMann.</p>
+                <br>
+
+                <b>
+                    <p>If you are on a Chromium-based browser, and the redirect didn't work for some reason, click <a
+                            href="/documents/installation.html">here</a>.</p>
+                </b>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
